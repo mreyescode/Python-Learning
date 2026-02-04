@@ -6,7 +6,7 @@ Repositorio de aprendizaje en Python donde documento mi progreso como programado
 
 Este es el clásico primer programa que todo desarrollador escribe cuando comienza a aprender un lenguaje de programación. Es simple, directo y con un propósito fundamental: imprimir mensajes en la consola y familiarizarnos con la sintaxis básica del lenguaje.
 
-🎯 ¿Qué aprendí aquí?
+<h2>🎯 ¿Qué aprendí aquí?</h2>
 En esta sección trabajé con lo esencial:
 
 Imprimir mensajes con print(): La función más básica pero fundamental de Python
@@ -38,7 +38,7 @@ F-strings: Usé formateo moderno de cadenas para crear mensajes dinámicos
 
 00.5_hello_ejerc.py: Mis propios ejercicios prácticos donde apliqué todo lo aprendido
 
-💡 Reflexión personal
+<h4>💡 Reflexión personal</h4>
 Este es el punto de partida. Puede parecer básico, pero estos fundamentos son la base de todo. Sin entender cómo funcionan print(), las variables y los tipos de datos, no puedes avanzar a conceptos más complejos.
 
 Me gustó la claridad que ofrece Python. Es elegante, directo y fácil de leer. El uso de f-strings para formatear cadenas es algo que definitivamente seguiré usando más adelante.
@@ -51,7 +51,7 @@ Nota: Este repositorio está en construcción activa. Cada archivo que suba ser�
 <h1>📦Variables</h1>
 Las variables son el corazón de cualquier programa. Sin ellas, no podríamos almacenar información, procesarla ni crear aplicaciones dinámicas. En esta sección me sumergí en cómo Python maneja las variables y por qué son tan flexibles.
 
-🎯 ¿Qué aprendí aquí?
+<h2>🎯 ¿Qué aprendí aquí?</h2>
 Aquí me enfoqué en dominar el almacenamiento y manipulación de datos:
 Declaración y asignación de variables: Aprendí que Python es dinámico, no necesitas declarar el tipo de variable explícitamente
 Tipado dinámico: Una variable puede cambiar de tipo en cualquier momento (de int a str, por ejemplo)
@@ -64,11 +64,70 @@ Reasignación de variables: Descubrí que las variables son mutables y pueden ca
 Type hints (anotaciones de tipo): Usé la sintaxis variable: tipo para documentar el tipo esperado, aunque Python no lo fuerza
 El tipo especial NoneType: Entendí que funciones como print() no retornan valor, por eso su tipo es None.
 
-💡 Reflexión personal
+<h4>💡 Reflexión personal</h2>
 Las variables son mucho más que simples "cajas" para guardar información. En Python, el tipado dinámico te da una flexibilidad increíble, pero también te exige responsabilidad. Puedes cambiar el tipo de una variable en cualquier momento, pero eso no significa que debas hacerlo sin razón.
 
 Me gustó descubrir que Python no te obliga a declarar tipos explícitamente, pero sí puedes usar type hints para hacer tu código más legible y profesional. Es un balance perfecto entre flexibilidad y claridad.
 
 También fue interesante ver cómo input() siempre devuelve un str, así que si necesitas trabajar con números, tienes que hacer el casting manualmente. Ese tipo de detalles son los que separan el código que funciona del código que funciona bien.
 
+<h1>⚙️ Operadores</h1>
+Los operadores son las herramientas que nos permiten hacer cálculos, comparar valores y tomar decisiones lógicas en Python. Sin ellos, nuestros programas serían estáticos y sin vida. En esta sección exploré cómo Python maneja las operaciones matemáticas, las comparaciones y la lógica booleana.
+
+<h2>🎯 ¿Qué aprendí aquí?</h2>
+Aquí me enfoqué en dominar las tres categorías principales de operadores:
+
+Operadores Aritméticos
++ Suma
+
+- Resta
+
+* Multiplicación
+
+/ División (siempre retorna float)
+
+% Módulo (residuo de una división)
+
+** Exponente (potencias)
+
+// División entera (elimina los decimales)
+
+Operadores con Cadenas
++ Concatenación de strings
+
+* Repetición de cadenas (ej: "Python" * 3 → "PythonPythonPython")
+
+Operadores de Comparación
+> Mayor que
+
+< Menor que
+
+>= Mayor o igual que
+
+<= Menor o igual que
+
+== Igual a
+
+!= Diferente de
+
+Dato importante: Las comparaciones siempre retornan un valor booleano (True o False)
+
+Operadores Lógicos
+and → Retorna True solo si ambas condiciones son verdaderas
+
+or → Retorna True si al menos una condición es verdadera
+
+not → Invierte el valor lógico (True → False, False → True)
+
+📂 Archivos relacionados
+02_operadores.py: Código basado en el curso de Brais Moure, donde exploramos todos los tipos de operadores
+
+02.5_operadores_ejerc.py: Mis ejercicios prácticos donde apliqué operaciones aritméticas, comparaciones y lógica booleana
+
+<h4>💡 Reflexión personal</h4>
+Los operadores son el motor de cualquier programa. Lo que más me sorprendió fue descubrir que Python puede comparar cadenas de texto usando el orden alfabético. Por ejemplo, "apple" < "banana" retorna True porque la letra a viene antes que b.
+
+También entendí algo crucial: cuando multiplicas un float por un número entero, el resultado sigue siendo float. Por eso, si quieres usar ese resultado para repetir una cadena (como "Hola" * my_float), primero debes convertirlo a int con int(). Ese tipo de detalles hacen la diferencia entre un código que funciona y un código que genera errores.
+
+Los operadores lógicos (and, or, not) son fundamentales para construir condiciones complejas. Son la base de las decisiones que tomará mi código más adelante cuando trabaje con condicionales y bucles.
 
