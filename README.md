@@ -130,4 +130,39 @@ Los operadores son el motor de cualquier programa. Lo que más me sorprendió fu
 También entendí algo crucial: cuando multiplicas un float por un número entero, el resultado sigue siendo float. Por eso, si quieres usar ese resultado para repetir una cadena (como "Hola" * my_float), primero debes convertirlo a int con int(). Ese tipo de detalles hacen la diferencia entre un código que funciona y un código que genera errores.
 
 Los operadores lógicos (and, or, not) son fundamentales para construir condiciones complejas. Son la base de las decisiones que tomará mi código más adelante cuando trabaje con condicionales y bucles.
+<hr>
+<h1>📜 Strings (Cadenas de Texto)</h1>
+Las cadenas de texto son uno de los tipos de datos más utilizados en cualquier programa. Desde mensajes en pantalla hasta procesamiento de información, los strings están en todas partes. En esta sección me sumergí en cómo Python maneja el texto y todas las herramientas poderosas que ofrece para manipularlo.
 
+<h1>🎯 ¿Qué aprendí aquí?</h1>
+Aquí me enfoqué en dominar el arte de trabajar con texto:
+
+Operaciones Básicas
+len(): Calcular la longitud de un string
+
+Concatenación: Unir cadenas usando +
+
+Caracteres de escape: \n (salto de línea), \t (tabulación)
+
+Repetición: Multiplicar strings (ej: "Python" * 3)
+
+Formateo de Strings
+.format(): Método tradicional para insertar variables
+
+f-strings: La forma moderna y elegante (ej: f"Hola {name}")
+
+Desempaquetado de Caracteres
+Puedes asignar cada carácter de un string a variables individuales:
+
+python
+p, y, t, h, o, n = "Python"
+Slicing (Cortes)
+El slicing te permite extraer porciones específicas de un string:
+
+string[1:3] → Caracteres desde índice 1 hasta 2 (el 3 no se incluye)
+
+string[0:6:2] → Cada dos caracteres
+
+string[::-1] → Invierte el string completamente
+
+string[-1] → Último carácter
