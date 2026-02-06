@@ -197,3 +197,92 @@ Los strings son más poderosos de lo que pensaba. Al principio parecen simples, 
 Lo que más me sorprendió fue el slicing con [::-1] para invertir strings. Es elegante, pythónico y demuestra que Python fue diseñado para ser intuitivo. También me encanta que puedas desempaquetar caracteres directamente en variables, aunque hay que usarlo con cuidado para no sacrificar legibilidad.
 
 Los f-strings son definitivamente la forma moderna de formatear texto. Son más limpios y legibles que .format(), y se sienten naturales al escribir código. A partir de ahora, serán mi método preferido.
+<hr>
+
+<h1>📋 Listas</h1>
+Las listas son una de las estructuras de datos más importantes y versátiles en Python. Son mutables, ordenadas y pueden contener cualquier tipo de dato. Desde almacenar números hasta combinar strings, enteros y floats en una misma lista, las posibilidades son infinitas. En esta sección me sumergí en el poder de las listas y todas las operaciones que puedes realizar con ellas.
+
+<h2>🎯 ¿Qué aprendí aquí?</h2>
+Aquí me enfoqué en dominar la manipulación de colecciones de datos:
+
+Crear Listas
+my_list = list() → Crear lista vacía con constructor
+
+my_list = [] → Crear lista vacía con sintaxis literal
+
+my_list = [1, 2, 3] → Crear lista con elementos
+
+Las listas pueden contener diferentes tipos de datos: [16, 1.65, "Milton", "Reyes"]
+
+Acceder a Elementos
+my_list[0] → Primer elemento
+
+my_list[-1] → Último elemento
+
+my_list[-2] → Penúltimo elemento
+
+Slicing: my_list[1:3] → Elementos desde índice 1 hasta 2 (el 3 no se incluye)
+
+Métodos para Agregar Elementos
+.append(element) → Agregar al final de la lista
+
+.insert(index, element) → Insertar en posición específica
+
+Métodos para Eliminar Elementos
+.remove(value) → Eliminar la primera ocurrencia del valor
+
+.pop() → Eliminar y retornar el último elemento
+
+.pop(index) → Eliminar y retornar elemento en posición específica
+
+del my_list[index] → Eliminar elemento por índice (sin retornar)
+
+.clear() → Vaciar toda la lista
+
+Métodos de Ordenamiento y Manipulación
+.reverse() → Invertir el orden de los elementos
+
+.sort() → Ordenar de menor a mayor (modifica la lista original)
+
+.copy() → Crear una copia independiente de la lista
+
+Métodos de Búsqueda e Información
+len(my_list) → Número total de elementos
+
+.count(value) → Contar cuántas veces aparece un valor
+
+.index(value) → Obtener la posición de la primera ocurrencia de un valor
+
+Operaciones Avanzadas
+Concatenación: list1 + list2 → Une dos listas
+
+Desempaquetado: Asignar elementos a variables individuales
+
+python
+age, height, name, surname = my_list
+⚠️ Importante: El número de variables debe coincidir con el número de elementos
+
+📂 Archivos relacionados
+04_listas.py: Código basado en el curso de Brais Moure, donde exploramos listas desde lo básico hasta operaciones avanzadas
+
+04.5_listas_ejerc.py: Mis ejercicios prácticos donde apliqué todos los métodos de manipulación de listas
+
+<h4>💡 Reflexión personal</h4>
+Las listas son poderosas. Lo que más me impresionó es que son mutables, lo que significa que puedes modificarlas después de crearlas. Esto las hace perfectas para almacenar datos dinámicos.
+
+Entender la diferencia entre .remove(), .pop() y del fue crucial:
+
+.remove(value) elimina el primer elemento que coincida con el valor
+
+.pop(index) elimina y devuelve el elemento (puedes guardarlo en una variable)
+
+del list[index] elimina sin devolver nada
+Entender la diferencia entre .remove(), .pop() y del fue crucial:
+
+.remove(value) elimina el primer elemento que coincida con el valor
+
+.pop(index) elimina y devuelve el elemento (puedes guardarlo en una variable)
+
+del list[index] elimina sin devolver nada
+
+También descubrí que .copy() es esencial cuando quieres trabajar con copias independientes. Si solo haces new_list = old_list, ambas variables apuntan a la misma lista en memoria, por lo que modificar una afecta a la otra. Con .copy(), tienes una lista completamente independiente.
