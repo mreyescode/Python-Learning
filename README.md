@@ -1,5 +1,9 @@
 # Python-Learning
 Repositorio de aprendizaje en Python donde documento mi progreso como programador junior. Incluye fundamentos, ejercicios prácticos y mini proyectos enfocados en resolver problemas reales y automatizar tareas, especialmente aplicadas a flujos creativos.
+Nota: Cada concepto que aprendo lo documento con detalle y lo aplico en ejercicios reales. Este repositorio es un reflejo transparente de mi aprendizaje. Si tienes feedback o sugerencias, mis redes están abiertas para colaborar.
+!!!!Todos los archivos que no tengan un "_ejerc.py" es código que fue creado por el curso de Python de Mourdev!!!!
+
+
  <hr>
 <h1>Hola Mundo 01/02/2026</h1>
 ¡Bienvenido al inicio de mi viaje con Python!
@@ -166,3 +170,30 @@ string[0:6:2] → Cada dos caracteres
 string[::-1] → Invierte el string completamente
 
 string[-1] → Último carácter
+
+<h5>Métodos Importantes</h5>
+.upper() → Convertir a MAYÚSCULAS
+
+.lower() → Convertir a minúsculas
+
+.capitalize() → Primera letra en mayúscula
+
+.count("x") → Contar cuántas veces aparece un carácter
+
+.isnumeric() → Verificar si es numérico
+
+.isupper() → Verificar si está en mayúsculas
+
+.startswith("Py") → Verificar si empieza con cierto texto
+<hr>
+<h4>📂 Archivos relacionados</h4>
+03_strings.py: Código basado en el curso de Brais Moure, donde exploramos strings desde lo básico hasta técnicas avanzadas
+
+03.5_strings_ejerc.py: Mis ejercicios prácticos donde apliqué slicing, métodos, formateo y más
+
+<h4>💡 Reflexión personal</h4>
+Los strings son más poderosos de lo que pensaba. Al principio parecen simples, pero cuando descubres el slicing y todos los métodos disponibles, te das cuenta de que Python te da control total sobre el texto.
+
+Lo que más me sorprendió fue el slicing con [::-1] para invertir strings. Es elegante, pythónico y demuestra que Python fue diseñado para ser intuitivo. También me encanta que puedas desempaquetar caracteres directamente en variables, aunque hay que usarlo con cuidado para no sacrificar legibilidad.
+
+Los f-strings son definitivamente la forma moderna de formatear texto. Son más limpios y legibles que .format(), y se sienten naturales al escribir código. A partir de ahora, serán mi método preferido.
