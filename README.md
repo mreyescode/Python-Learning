@@ -287,3 +287,72 @@ Entender la diferencia entre .remove(), .pop() y del fue crucial:
 del list[index] elimina sin devolver nada
 
 También descubrí que .copy() es esencial cuando quieres trabajar con copias independientes. Si solo haces new_list = old_list, ambas variables apuntan a la misma lista en memoria, por lo que modificar una afecta a la otra. Con .copy(), tienes una lista completamente independiente.
+
+<h1>🔒 Tuplas</h1>
+Las tuplas son estructuras de datos similares a las listas, pero con una diferencia fundamental: son inmutables. Una vez que creas una tupla, no puedes modificar sus elementos. Esta característica las hace perfectas para datos que no deben cambiar, ofreciendo seguridad y eficiencia. En esta sección exploré cómo funcionan las tuplas y cuándo usarlas.
+
+<h2>🎯 ¿Qué aprendí aquí?</h2>
+Aquí me enfoqué en entender las tuplas y sus diferencias con las listas:
+
+Crear Tuplas
+my_tuple = tuple() → Crear tupla vacía con constructor
+
+my_tuple = () → Crear tupla vacía con sintaxis literal
+
+my_tuple = (1, 2, 3) → Crear tupla con elementos
+
+Las tuplas pueden contener diferentes tipos de datos: (16, 1.65, "Milton", "Reyes")
+
+⚠️ Importante - Tuplas de un solo elemento:
+
+python
+tupla = (100,)  # ✅ Tupla válida (nota la coma)
+no_tupla = (100)  # ❌ Esto es un entero, NO una tupla
+Acceder a Elementos
+my_tuple[0] → Primer elemento
+
+my_tuple[-1] → Último elemento
+
+Slicing: my_tuple[2:4] → Elementos desde índice 2 hasta 3
+
+Métodos Disponibles
+Las tuplas tienen solo dos métodos (porque son inmutables):
+
+.count(value) → Contar cuántas veces aparece un valor
+
+.index(value) → Obtener la posición de la primera ocurrencia
+
+Operaciones con Tuplas
+Concatenación: tuple1 + tuple2 → Crear una nueva tupla combinada
+
+Conversión a lista: list(my_tuple) → Para modificar elementos indirectamente
+
+Conversión a tupla: tuple(my_list) → Volver a convertir la lista en tupla
+
+Eliminar tupla: del my_tuple → Elimina la variable (no elementos individuales)
+
+Inmutabilidad: La clave de las tuplas
+python
+my_tuple = (1, 2, 3)
+my_tuple[0] = 10  # ❌ TypeError: 'tuple' object does not support item assignment
+Si necesitas modificar una tupla:
+
+Conviértela en lista: my_list = list(my_tuple)
+
+Modifica la lista: my_list[0] = 10
+
+Vuelve a convertirla en tupla: my_tuple = tuple(my_list)
+
+📂 Archivos relacionados
+05_tuplas.py: Código basado en el curso de Brais Moure, donde exploramos tuplas y su inmutabilidad
+
+05.5_tuplas_ejerc.py: Mis ejercicios prácticos donde apliqué todos los conceptos de tuplas
+
+<h4>💡 Reflexión personal</h4>
+Las tuplas son la versión segura e inmutable de las listas. Al principio, pueden parecer limitadas porque no puedes modificarlas, pero esa es precisamente su fortaleza. Si tienes datos que no deben cambiar (coordenadas, configuraciones, datos fijos), las tuplas son la mejor opción.
+
+Lo que más me sorprendió fue descubrir que para crear una tupla de un solo elemento, debes incluir una coma: (100,). Si no lo haces, Python lo interpreta como un entero entre paréntesis, no como una tupla. Ese tipo de detalles técnicos son los que separan el código amateur del profesional.
+
+También aprendí que aunque las tuplas son inmutables, puedes convertirlas temporalmente en listas para modificarlas. Esto es útil cuando necesitas hacer cambios específicos pero quieres mantener la inmutabilidad como regla general.
+
+Las tuplas son más eficientes en memoria que las listas porque Python sabe que no cambiarán. Además, pueden usarse como claves en diccionarios (las listas no pueden), lo cual las hace indispensables en ciertos contextos.
