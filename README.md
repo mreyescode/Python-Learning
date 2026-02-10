@@ -1,4 +1,5 @@
 # Python-Learning
+<h4>Todos los ejercicios los pueden ver en el archivo "00_ejercicios.py"</h4>
 Repositorio de aprendizaje en Python donde documento mi progreso como programador junior. Incluye fundamentos, ejercicios prácticos y mini proyectos enfocados en resolver problemas reales y automatizar tareas, especialmente aplicadas a flujos creativos.
 Nota: Cada concepto que aprendo lo documento con detalle y lo aplico en ejercicios reales. Este repositorio es un reflejo transparente de mi aprendizaje. Si tienes feedback o sugerencias, mis redes están abiertas para colaborar.
 !!!!Todos los archivos que no tengan un "_ejerc.py" es código que fue creado por el curso de Python de Mourdev!!!!
