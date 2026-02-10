@@ -287,7 +287,7 @@ Entender la diferencia entre .remove(), .pop() y del fue crucial:
 del list[index] elimina sin devolver nada
 
 También descubrí que .copy() es esencial cuando quieres trabajar con copias independientes. Si solo haces new_list = old_list, ambas variables apuntan a la misma lista en memoria, por lo que modificar una afecta a la otra. Con .copy(), tienes una lista completamente independiente.
-
+<hr>
 <h1>🔒 Tuplas</h1>
 Las tuplas son estructuras de datos similares a las listas, pero con una diferencia fundamental: son inmutables. Una vez que creas una tupla, no puedes modificar sus elementos. Esta característica las hace perfectas para datos que no deben cambiar, ofreciendo seguridad y eficiencia. En esta sección exploré cómo funcionan las tuplas y cuándo usarlas.
 
