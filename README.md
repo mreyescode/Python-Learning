@@ -356,3 +356,38 @@ Lo que más me sorprendió fue descubrir que para crear una tupla de un solo ele
 También aprendí que aunque las tuplas son inmutables, puedes convertirlas temporalmente en listas para modificarlas. Esto es útil cuando necesitas hacer cambios específicos pero quieres mantener la inmutabilidad como regla general.
 
 Las tuplas son más eficientes en memoria que las listas porque Python sabe que no cambiarán. Además, pueden usarse como claves en diccionarios (las listas no pueden), lo cual las hace indispensables en ciertos contextos.
+<hr>
+<h1>🧩Sets (Conjuntos)</h1> 
+
+Los sets en Python son una estructura de datos diseñada para trabajar con elementos únicos y para hacer validaciones rápidas de pertenencia (si algo está o no está). Son perfectos cuando no te interesa el orden, pero sí te importa evitar duplicados y manejar “colecciones limpias”.
+​
+
+<h2>🎯 ¿Qué aprendí aquí?</h2>
+Cómo crear sets: con set() o con llaves {} (pero ojo: {} vacío es un diccionario, no un set).
+​
+
+Un set NO está ordenado: al imprimirlo, el orden puede cambiar, así que no debes confiar en posiciones.
+​
+
+No admite repetidos: si intentas agregar un valor duplicado, no truena, solo no pasa nada.
+
+Agregar y quitar elementos: add() para agregar, remove() para eliminar un elemento específico, clear() para vaciar.
+
+Pertenencia con in: la forma correcta de comprobar si un elemento existe dentro de un set.
+
+Operaciones entre sets: union() para unir conjuntos y difference() para obtener lo que está en uno y no en el otro.
+
+Convertir a lista: se puede con list(my_set), pero es “peligroso” indexar esa lista si dependes del orden, porque viene de algo que no es ordenado.
+
+📂 Archivos relacionados
+06_sets.py: práctica guiada (basada en el curso) donde exploré creación, tipos, pertenencia, conversión a lista y operaciones como union() y difference().
+​
+
+06.5_set_ejerc.py: mis ejercicios aplicando lo esencial: no duplicados, in, remove(), clear(), union() y difference().
+​
+
+<h4>💡 Reflexión personal</h4>
+Un set es como un filtro automático: tú metes cosas y Python se asegura de que no haya copias. Eso lo vuelve muy útil para limpiar datos repetidos o verificar rápidamente si algo ya existe (por ejemplo: usuarios, IDs, tags).
+
+También entendí una regla de oro: si necesito orden y posiciones, uso listas; si necesito unicidad y validación rápida, uso sets.
+​
